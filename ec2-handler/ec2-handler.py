@@ -1,7 +1,7 @@
 import json
 import boto3
 
-def lamda_handler(event, context):
+def lambda_handler(event, context):
   body = json.loads(event['body'])
   region = body['region']
   instances = body['instances']
